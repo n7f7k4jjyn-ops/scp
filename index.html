@@ -1319,6 +1319,24 @@ button { font: inherit; color: inherit; }
 #footer small { opacity: .75; }
 }
 </style>
+
+<style data-8b-part="verdant-brand-override">
+/* Verdant CWB — visual identity only. Structure, copy and motion intentionally untouched. */
+:root{
+  --verdant-blue:#6F9FE4;
+  --verdant-lilac:#BBA8E8;
+  --verdant-pink:#E9A9D5;
+  --verdant-peach:#F5C29E;
+  --verdant-yellow:#FFE45B;
+  --verdant-gradient:linear-gradient(90deg,var(--verdant-blue) 0%,var(--verdant-lilac) 24%,var(--verdant-pink) 50%,var(--verdant-peach) 76%,var(--verdant-yellow) 100%);
+}
+body{background:#05060A;color:#fff;}
+::selection{background:var(--verdant-pink);color:#05060A;}
+a:focus-visible,button:focus-visible{outline-color:var(--verdant-pink);}
+/* Recolour existing template accents without altering geometry. */
+.op-ring,.m-ring,.ct-ring{border-color:var(--verdant-pink)!important;}
+.menu a:hover,.nav a:hover{color:var(--verdant-pink);}
+</style>
 </head>
 <body class="m-text">
 <a class="skip m-text-4" href="#main">Skip to content</a>
